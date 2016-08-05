@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,16 +16,57 @@
                         <viewControllerLayoutGuide type="bottom" id="5eX-G9-Pbf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="P9t-b7-7pZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_picture" translatesAutoresizingMaskIntoConstraints="NO" id="0bl-8d-0g9">
+                                <rect key="frame" x="66" y="212" width="243" height="243"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0bl-8d-0g9" secondAttribute="height" multiplier="1:1" id="DHD-qz-74J"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yej-nd-2JD">
+                                <rect key="frame" x="234" y="162" width="75" height="30"/>
+                                <state key="normal" title="生成二维码"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eex-Db-JoX">
+                                <rect key="frame" x="102" y="174" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pgR-oI-Oh9">
+                                <rect key="frame" x="66" y="112" width="243" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0bl-8d-0g9" firstAttribute="centerY" secondItem="P9t-b7-7pZ" secondAttribute="centerY" id="64Z-1v-NYX"/>
+                            <constraint firstItem="0bl-8d-0g9" firstAttribute="top" secondItem="pgR-oI-Oh9" secondAttribute="bottom" constant="70" id="ARg-s6-99g"/>
+                            <constraint firstItem="0bl-8d-0g9" firstAttribute="top" secondItem="yej-nd-2JD" secondAttribute="bottom" constant="20" id="Ii2-NZ-Sm9"/>
+                            <constraint firstItem="pgR-oI-Oh9" firstAttribute="width" secondItem="0bl-8d-0g9" secondAttribute="width" id="Re5-ao-t9H"/>
+                            <constraint firstItem="yej-nd-2JD" firstAttribute="trailing" secondItem="0bl-8d-0g9" secondAttribute="trailing" id="WMn-wZ-XQr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0bl-8d-0g9" secondAttribute="trailing" constant="50" id="XNB-XB-nSF"/>
+                            <constraint firstItem="0bl-8d-0g9" firstAttribute="leading" secondItem="pgR-oI-Oh9" secondAttribute="leading" id="fZL-xH-mpz"/>
+                            <constraint firstItem="0bl-8d-0g9" firstAttribute="leading" secondItem="P9t-b7-7pZ" secondAttribute="leadingMargin" constant="50" id="qhw-dK-sCw"/>
+                            <constraint firstItem="0bl-8d-0g9" firstAttribute="centerX" secondItem="P9t-b7-7pZ" secondAttribute="centerX" id="zjV-x8-dHm"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="eex-Db-JoX"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YCh-KU-RxP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1195" y="-220"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="empty_picture" width="100" height="100"/>
+    </resources>
 </document>

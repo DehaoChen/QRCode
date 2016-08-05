@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,14 +17,58 @@
                     <view key="view" contentMode="scaleToFill" id="So0-QK-qiX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzK-S6-J5g">
+                                <rect key="frame" x="40" y="120" width="240" height="240"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode_border" translatesAutoresizingMaskIntoConstraints="NO" id="eDT-sL-hXK">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode_scanline_qrcode" translatesAutoresizingMaskIntoConstraints="NO" id="TFg-HK-0pZ">
+                                        <rect key="frame" x="0.0" y="-240" width="240" height="240"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="240" id="r9N-h9-qDu"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vzK-S6-J5g" secondAttribute="height" multiplier="1:1" id="12p-ka-nVz"/>
+                                    <constraint firstAttribute="width" constant="240" id="2Md-Le-QEs"/>
+                                    <constraint firstItem="eDT-sL-hXK" firstAttribute="leading" secondItem="vzK-S6-J5g" secondAttribute="leading" id="IuO-5j-mWI"/>
+                                    <constraint firstItem="TFg-HK-0pZ" firstAttribute="leading" secondItem="vzK-S6-J5g" secondAttribute="leading" id="OBf-Jm-ZKe"/>
+                                    <constraint firstItem="eDT-sL-hXK" firstAttribute="top" secondItem="vzK-S6-J5g" secondAttribute="top" id="RTT-KS-uMZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="eDT-sL-hXK" secondAttribute="bottom" id="VbP-V3-sqL"/>
+                                    <constraint firstAttribute="trailing" secondItem="TFg-HK-0pZ" secondAttribute="trailing" id="dRy-Cw-VJ6"/>
+                                    <constraint firstAttribute="trailing" secondItem="eDT-sL-hXK" secondAttribute="trailing" id="fVt-IP-zqk"/>
+                                    <constraint firstAttribute="bottom" secondItem="TFg-HK-0pZ" secondAttribute="bottom" id="rCe-vy-dxx"/>
+                                    <constraint firstAttribute="bottom" secondItem="TFg-HK-0pZ" secondAttribute="bottom" constant="240" id="sLz-rz-JNb"/>
+                                    <constraint firstItem="TFg-HK-0pZ" firstAttribute="top" secondItem="vzK-S6-J5g" secondAttribute="top" id="tya-r2-HbM"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="rCe-vy-dxx"/>
+                                        <exclude reference="tya-r2-HbM"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vzK-S6-J5g" firstAttribute="centerX" secondItem="So0-QK-qiX" secondAttribute="centerX" id="Ljq-d6-1q7"/>
+                            <constraint firstItem="vzK-S6-J5g" firstAttribute="centerY" secondItem="So0-QK-qiX" secondAttribute="centerY" id="qR1-qG-Pex"/>
+                        </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwC-nr-fmH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1246" y="219"/>
+            <point key="canvasLocation" x="1026" y="213"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="qrcode_border" width="51" height="51"/>
+        <image name="qrcode_scanline_qrcode" width="218" height="170"/>
+    </resources>
 </document>
