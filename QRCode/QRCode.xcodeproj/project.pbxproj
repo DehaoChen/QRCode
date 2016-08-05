@@ -15,6 +15,9 @@
 		8386D6971D54FBEE00C7B98F /* Detector.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8386D6961D54FBEE00C7B98F /* Detector.storyboard */; };
 		8386D6991D54FC2C00C7B98F /* Scanning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8386D6981D54FC2C00C7B98F /* Scanning.storyboard */; };
 		8386D69B1D54FD5C00C7B98F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8386D69A1D54FD5C00C7B98F /* ViewController.swift */; };
+		8386D69D1D55037500C7B98F /* CDH_GeneratorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8386D69C1D55037500C7B98F /* CDH_GeneratorController.swift */; };
+		8386D69F1D55039400C7B98F /* CDH_DetectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8386D69E1D55039400C7B98F /* CDH_DetectorController.swift */; };
+		8386D6A11D5503B100C7B98F /* CDH_ScanningController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8386D6A01D5503B100C7B98F /* CDH_ScanningController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		8386D6961D54FBEE00C7B98F /* Detector.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Detector.storyboard; sourceTree = "<group>"; };
 		8386D6981D54FC2C00C7B98F /* Scanning.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Scanning.storyboard; sourceTree = "<group>"; };
 		8386D69A1D54FD5C00C7B98F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8386D69C1D55037500C7B98F /* CDH_GeneratorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDH_GeneratorController.swift; sourceTree = "<group>"; };
+		8386D69E1D55039400C7B98F /* CDH_DetectorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDH_DetectorController.swift; sourceTree = "<group>"; };
+		8386D6A01D5503B100C7B98F /* CDH_ScanningController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDH_ScanningController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				8386D6961D54FBEE00C7B98F /* Detector.storyboard */,
+				8386D69E1D55039400C7B98F /* CDH_DetectorController.swift */,
 			);
 			name = "Detector(识别)";
 			path = Detector;
@@ -95,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				8386D6941D54FBC700C7B98F /* Generator.storyboard */,
+				8386D69C1D55037500C7B98F /* CDH_GeneratorController.swift */,
 			);
 			name = "Generator(生成)";
 			path = Generator;
@@ -112,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				8386D6981D54FC2C00C7B98F /* Scanning.storyboard */,
+				8386D6A01D5503B100C7B98F /* CDH_ScanningController.swift */,
 			);
 			name = "Scanning(扫描)";
 			path = Scanning;
@@ -150,6 +159,7 @@
 		8386D6711D54F6A900C7B98F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CDH_;
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = CDH;
@@ -200,6 +210,9 @@
 			files = (
 				8386D69B1D54FD5C00C7B98F /* ViewController.swift in Sources */,
 				8386D67D1D54F6A900C7B98F /* AppDelegate.swift in Sources */,
+				8386D69D1D55037500C7B98F /* CDH_GeneratorController.swift in Sources */,
+				8386D69F1D55039400C7B98F /* CDH_DetectorController.swift in Sources */,
+				8386D6A11D5503B100C7B98F /* CDH_ScanningController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
