@@ -12,7 +12,7 @@ class CDH_DetectorController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = UIColor.yellowColor()
         // Do any additional setup after loading the view.
     }
 

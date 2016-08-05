@@ -45,14 +45,14 @@
                                 <rect key="frame" x="123" y="225" width="75" height="30"/>
                                 <state key="normal" title="识别二维码"/>
                                 <connections>
-                                    <segue destination="f1V-iU-P3Z" kind="show" id="vSs-0v-PSX"/>
+                                    <segue destination="ZRY-vE-q7c" kind="show" id="ora-ea-TNf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ban-Oe-1ej">
                                 <rect key="frame" x="123" y="285" width="75" height="30"/>
                                 <state key="normal" title="扫描二维码"/>
                                 <connections>
-                                    <segue destination="ZRY-vE-q7c" kind="show" id="Gts-j7-Vf6"/>
+                                    <segue destination="f1V-iU-P3Z" kind="show" id="QVb-Ek-DNN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -95,7 +95,7 @@
                 <viewControllerPlaceholder storyboardName="Scanning" id="f1V-iU-P3Z" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oEw-Mf-9L5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1163.5" y="-102"/>
+            <point key="canvasLocation" x="1165.5" y="-102"/>
         </scene>
     </scenes>
 </document>

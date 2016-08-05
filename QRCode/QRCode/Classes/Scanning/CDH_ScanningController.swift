@@ -12,7 +12,7 @@ class CDH_ScanningController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = UIColor.greenColor()
         // Do any additional setup after loading the view.
     }
 
