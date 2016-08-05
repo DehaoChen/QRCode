@@ -6,10 +6,10 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Scanning Controller-->
         <scene sceneID="vz3-BE-i4W">
             <objects>
-                <viewController id="dHx-Vw-1D3" sceneMemberID="viewController">
+                <viewController id="dHx-Vw-1D3" customClass="CDH_ScanningController" customModule="QRCode" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HKl-Mx-mUO"/>
                         <viewControllerLayoutGuide type="bottom" id="eoP-yH-iuS"/>

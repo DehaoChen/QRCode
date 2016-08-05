@@ -7,10 +7,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Detector Controller-->
         <scene sceneID="S3F-Ha-nQZ">
             <objects>
-                <viewController id="le7-G0-yxe" sceneMemberID="viewController">
+                <viewController id="le7-G0-yxe" customClass="CDH_DetectorController" customModule="QRCode" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1UQ-KL-9Ld"/>
                         <viewControllerLayoutGuide type="bottom" id="ckR-Yg-etb"/>
